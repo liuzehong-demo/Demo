@@ -12,12 +12,13 @@ namespace Demo.EF
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using Demo.Helper;
     using Demo.Model.EFModel;
     
     public partial class LZHData : DbContext
     {
         public LZHData()
-            : base("name=LZHData")
+            : base(SQLHelper.Main())
         {
         }
     
