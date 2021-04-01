@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo.Bll;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+           var student =  BStudent.Instance.GetModelByID(1);
+            Console.WriteLine(student.Name);
+
+            Console.ReadKey();
         }
     }
 }
