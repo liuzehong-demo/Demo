@@ -11,8 +11,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-           var student =  BStudent.Instance.GetModelByID(1);
-            Console.WriteLine(student.Name);
+            BTransaction.Instance.Run();
 
             Console.ReadKey();
         }

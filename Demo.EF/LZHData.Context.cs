@@ -12,13 +12,12 @@ namespace Demo.EF
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using Demo.Helper;
     using Demo.Model.EFModel;
     
     public partial class LZHData : DbContext
     {
         public LZHData()
-            : base(SQLHelper.Main())
+            : base("name=LZHData")
         {
         }
     
@@ -28,5 +27,6 @@ namespace Demo.EF
         }
     
         public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<Person> Person { get; set; }
     }
 }

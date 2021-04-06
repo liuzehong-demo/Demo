@@ -53,6 +53,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LZHData.tt</DependentUpon>
     </Compile>
+    <Compile Include="EFModel\Person.cs">
+      <DependentUpon>LZHData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EFModel\Student.cs">
       <DependentUpon>LZHData.tt</DependentUpon>
