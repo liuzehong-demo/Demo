@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test.Demo.Demo.Model.EFModel
+namespace Demo.Model.EFModel
 {
     using System;
     using System.Collections.Generic;
