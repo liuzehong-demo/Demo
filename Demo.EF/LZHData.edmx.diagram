@@ -5,8 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d3efe6eb952349fda61ed1e01761ccc4" Name="Diagram1" >
-        <EntityTypeShape EntityType="LZHModel.Student" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="LZHModel.Student" Width="1.5" PointX="3.375" PointY="3" IsExpanded="true" FillColor="Salmon" />
         <EntityTypeShape EntityType="LZHModel.Person" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LZHModel.PersonInfo" Width="1.5" PointX="5.625" PointY="0.875" />
+        <EntityTypeShape EntityType="LZHModel.School" Width="1.5" PointX="1.125" PointY="3" />
+        <AssociationConnector Association="LZHModel.FK_Student_School" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

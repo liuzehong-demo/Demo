@@ -12,12 +12,18 @@ namespace Demo.Model.EFModel
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class School
     {
-        public long ID { get; set; }
-        public string Name { get; set; }
-        public long SchoolId { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public School()
+        {
+            this.Student = new HashSet<Student>();
+        }
     
-        public virtual School School { get; set; }
+        public long SchoolId { get; set; }
+        public string SchoolName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Student> Student { get; set; }
     }
 }

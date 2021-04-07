@@ -12,12 +12,10 @@ namespace Demo.Model.EFModel
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class PersonInfo
     {
-        public long ID { get; set; }
-        public string Name { get; set; }
-        public long SchoolId { get; set; }
-    
-        public virtual School School { get; set; }
+        public int PersonId { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }
